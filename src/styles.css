@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* APP */
+.App {
+  text-align: center;
+}
+
+.App h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #876445;
+}
+/* Scoreboard */
+.Scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.Scoreboard p {
+  font-size: 1.6rem;
+  color: #876445;
+}
+
+/* Board */
+.board {
+  width: 500px;
+  height: 500px;
+  background-color: #76ba99;
+  border: 1px solid #eddfb3;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #eddfb3;
+}
+
+.square {
+  flex: 33%;
+  height: 100%;
+  border: 1px solid#eddfb3;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.square:active {
+  background-color: #ca955c;
+}
+
+/* RESET BUTTON */
+.reset-btn {
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  background-color: #76ba99;
+  color: #632908;
+  cursor: pointer;
+  border: none;
+}
+
+.reset-btn:active {
+  background-color: #eddfb3;
+}
+/* BEGINNING FORM */
+.beginning-form {
+  position: absolute;
+  width: 500px;
+  height: 800px;
+  background-color: rgb(12, 12, 12);
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.beginning-form form {
+  text-align: center;
+}
+.beginning-form form input {
+  width: 400px;
+  height: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.beginning-form form button {
+  width: 250px;
+  height: 3rem;
+  margin-top: 2.5rem;
+  font-size: 1.5rem;
+}
+
+/* Result */
+
+.result {
+  font-size: 2.6rem;
+  background: linear-gradient(to right, #876445 30%, #06e077 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  margin-bottom: 0;
+}
